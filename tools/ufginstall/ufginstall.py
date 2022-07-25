@@ -160,7 +160,7 @@ class GifDep(Dep):
 
   def install(self):
     """Installs giflib dependency."""
-    url = 'https://sourceforge.net/projects/giflib/files/giflib-5.1.9.tar.gz/download'
+    url = 'https://ftp.osuosl.org/pub/blfs/conglomeration/giflib/giflib-5.1.9.tar.gz'
     extra_args = ['-DCMAKE_POSITION_INDEPENDENT_CODE=1']
     patch_paths = ['giflib/CMakeLists.txt', 'giflib/giflib-config.cmake']
     if platform.system() == 'Windows':
